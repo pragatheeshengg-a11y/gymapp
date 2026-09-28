@@ -1,0 +1,278 @@
+.home-page {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff8dc;
+    color: #111;
+}
+
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.hero-section {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+/* =====================================
+   COMMON SECTION
+===================================== */
+
+.home-section {
+    width: 100%;
+    padding: 80px 8%;
+    text-align: center;
+}
+
+.home-section h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 25px;
+    color: #111;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.home-section h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 5px;
+    background: #e00000;
+    margin: 15px auto 0;
+    border-radius: 5px;
+}
+
+.home-section p {
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.about-section {
+    background: #fff8dc;
+}
+
+.about-section p {
+    max-width: 900px;
+    margin: 15px auto;
+    color: #333;
+}
+
+
+/* =====================================
+   WHY CHOOSE US
+===================================== */
+
+.why-section {
+    background: #111;
+    color: white;
+}
+
+.why-section h1 {
+    color: #ffd600;
+}
+
+.features {
+    max-width: 1200px;
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Feature Card */
+
+.feature-card {
+    padding: 35px 25px;
+
+    background: #1b1b1b;
+
+    border: 2px solid #333;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+
+    border-color: #ffd600;
+
+    box-shadow:
+        0 10px 30px rgba(255, 214, 0, 0.25);
+}
+
+.feature-card span {
+    font-size: 45px;
+}
+
+.feature-card h3 {
+    margin: 15px 0;
+
+    font-size: 21px;
+
+    color: #ffd600;
+}
+
+.feature-card p {
+    color: #ccc;
+
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-section {
+    background: #fff8dc;
+}
+
+.contact-container {
+    max-width: 1200px;
+
+    margin: 45px auto 0;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.contact-card {
+    padding: 30px 20px;
+
+    background: #111;
+
+    color: white;
+
+    border-radius: 15px;
+
+    border-bottom: 5px solid #ffd600;
+
+    transition: 0.3s;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+
+    border-bottom-color: #e00000;
+}
+
+.contact-card span {
+    font-size: 35px;
+}
+
+.contact-card h3 {
+    color: #ffd600;
+
+    margin: 15px 0;
+}
+
+.contact-card p {
+    color: #ddd;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+}
+
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.home-footer {
+    background: #050505;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 50px 20px;
+
+    border-top: 5px solid #e00000;
+}
+
+.home-footer h2 {
+    color: #ffd600;
+
+    font-size: 30px;
+
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    color: #ddd;
+
+    margin-bottom: 20px;
+
+    font-size: 15px;
+}
+
+.home-footer p {
+    color: #aaa;
+
+    margin: 8px;
+}
+
+.copyright {
+    margin-top: 25px !important;
+
+    color: #ffd600 !important;
+
+    font-size: 14px;
+}
+
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 900px) {
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .home-section {
+        padding: 60px 20px;
+    }
+
+    .home-section h1 {
+        font-size: 32px;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+}

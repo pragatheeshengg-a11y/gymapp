@@ -5,8 +5,8 @@ const bcrypt=require("bcryptjs");
 const auth =require("../middleware/adminauth");
 const Admin =require("../models/adminmodel");
 
-router.post("/adminlogin",async (req,res)=>{
-    console.log("hi backend")
+router.post("/admin/login",async (req,res)=>{
+    //console.log("hi backend")
     try{
         const {email,password}=req.body
         const admin = await Admin.findOne({ email });
@@ -47,5 +47,18 @@ router.post("/adminlogin",async (req,res)=>{
     }
 
 })
+router.get("/admin/dashboard",auth,async (req,res)=>{
+    try{
+        const name= await Admin.findById(req.user.id).select("name");
+        res.status(200).json(name);
 
+    }catch (err) {
+
+        res.status(500).json({
+            message: err.message
+        });
+
+    }
+
+})
 module.exports= router;

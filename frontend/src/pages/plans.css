@@ -1,0 +1,545 @@
+/* =================================
+   RESET
+================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =================================
+   PLANS PAGE
+================================= */
+
+.plans-page {
+    min-height: 100vh;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    position: relative;
+
+    overflow: hidden;
+
+    /* LIGHT YELLOW BACKGROUND */
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 214, 0, 0.18),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 75%,
+            rgba(224, 0, 0, 0.10),
+            transparent 25%
+        ),
+        #fff8dc;
+}
+
+
+/* =================================
+   GYM EQUIPMENT - TOP
+================================= */
+
+.plans-page::before {
+    content: "🏋️   💪   🏋️‍♂️   💪   🏋️";
+
+    position: absolute;
+
+    top: 20px;
+    left: 0;
+
+    width: 100%;
+
+    font-size: 50px;
+
+    letter-spacing: 20px;
+
+    opacity: 0.10;
+
+    transform: rotate(-3deg);
+
+    pointer-events: none;
+}
+
+
+/* =================================
+   GYM EQUIPMENT - BOTTOM
+================================= */
+
+.plans-page::after {
+    content: "⚫ ⚫ ⚫     🏋️     ⚫ ⚫ ⚫     💪";
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 0;
+
+    width: 100%;
+
+    font-size: 45px;
+
+    letter-spacing: 15px;
+
+    opacity: 0.10;
+
+    pointer-events: none;
+}
+
+
+/* =================================
+   HEADING
+================================= */
+
+.plans-title {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 42px;
+
+    margin-bottom: 10px;
+
+    font-weight: 900;
+
+    color: #111;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* Red line below heading */
+
+.plans-title::after {
+    content: "";
+
+    display: block;
+
+    width: 80px;
+
+    height: 5px;
+
+    margin: 12px auto 0;
+
+    background: #e00000;
+
+    border-radius: 10px;
+}
+
+
+/* =================================
+   SUBTITLE
+================================= */
+
+.plans-subtitle {
+    position: relative;
+
+    z-index: 2;
+
+    font-size: 18px;
+
+    color: #d00000;
+
+    margin: 20px 0 55px;
+
+    font-family:
+        Cambria,
+        Cochin,
+        Georgia,
+        Times,
+        "Times New Roman",
+        serif;
+
+    font-weight: bold;
+}
+
+
+/* =================================
+   THREE CARDS
+================================= */
+
+.plans-container {
+    position: relative;
+
+    z-index: 2;
+
+    max-width: 1200px;
+
+    margin: auto;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: stretch;
+
+    gap: 30px;
+}
+
+
+/* =================================
+   CARD
+================================= */
+
+.plan-card {
+    position: relative;
+
+    width: 300px;
+
+    min-height: 440px;
+
+    padding: 35px 25px;
+
+    border-radius: 20px;
+
+    background: #111;
+
+    color: white;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+
+    border-bottom: 5px solid #ffd600;
+}
+
+
+/* =================================
+   CARD HOVER
+================================= */
+
+.plan-card:hover {
+    transform: translateY(-12px);
+
+    box-shadow:
+        0 25px 45px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =================================
+   PLAN NAME
+================================= */
+
+.plan-card h2 {
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+}
+
+
+/* =================================
+   PRICE
+================================= */
+
+.plan-card h3 {
+    font-size: 35px;
+
+    margin-bottom: 30px;
+
+    color: #ffd600;
+}
+
+
+.plan-card h3 span {
+    font-size: 15px;
+
+    color: #aaa;
+}
+
+
+/* =================================
+   FEATURES
+================================= */
+
+.plan-card ul {
+    list-style: none;
+
+    padding: 0;
+
+    margin: 0;
+
+    text-align: left;
+}
+
+
+.plan-card li {
+    margin: 18px 0;
+
+    font-size: 16px;
+
+    color: #eee;
+}
+
+
+/* Check mark */
+
+.plan-card li::before {
+    content: "✓";
+
+    color: #ffd600;
+
+    font-weight: bold;
+
+    margin-right: 10px;
+}
+
+
+/* =================================
+   BUTTON
+================================= */
+
+.plan-card button {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* =================================
+   SILVER
+================================= */
+
+.silver {
+    border-top: 6px solid #aaa;
+}
+
+
+.silver h2 {
+    color: #ccc;
+}
+
+
+.silver button {
+    background: #aaa;
+
+    color: #111;
+}
+
+
+.silver button:hover {
+    background: #ffd600;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   GOLD
+================================= */
+
+.gold {
+    border-top: 6px solid #ffd600;
+
+    transform: scale(1.05);
+
+    border-bottom-color: #e00000;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.35);
+}
+
+
+.gold h2 {
+    color: #ffd600;
+}
+
+
+.gold button {
+    background: #ffd600;
+
+    color: #111;
+}
+
+
+.gold button:hover {
+    background: #e00000;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(224, 0, 0, 0.3);
+}
+
+
+/* =================================
+   PLATINUM
+================================= */
+
+.platinum {
+    border-top: 6px solid #ddd;
+}
+
+
+.platinum h2 {
+    color: #eee;
+}
+
+
+.platinum button {
+    background: #e00000;
+
+    color: white;
+}
+
+
+.platinum button:hover {
+    background: #ffd600;
+
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* =================================
+   POPULAR BADGE
+================================= */
+
+.popular {
+    position: absolute;
+
+    top: -17px;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    background: #e00000;
+
+    color: white;
+
+    padding: 8px 20px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+
+    box-shadow:
+        0 5px 15px rgba(224, 0, 0, 0.3);
+}
+
+
+/* =================================
+   CARD EQUIPMENT ICON
+================================= */
+
+.plan-card::after {
+    content: "🏋️";
+
+    position: absolute;
+
+    right: 15px;
+
+    bottom: 12px;
+
+    font-size: 28px;
+
+    opacity: 0.12;
+}
+
+
+/* =================================
+   MOBILE
+================================= */
+
+@media (max-width: 900px) {
+
+    .plans-container {
+        flex-direction: column;
+
+        align-items: center;
+
+        gap: 35px;
+    }
+
+
+    .gold {
+        transform: none;
+    }
+
+
+    .gold:hover {
+        transform: translateY(-12px);
+    }
+
+}
+
+
+/* =================================
+   SMALL MOBILE
+================================= */
+
+@media (max-width: 500px) {
+
+    .plans-page {
+        padding: 55px 15px;
+    }
+
+
+    .plans-title {
+        font-size: 30px;
+    }
+
+
+    .plans-subtitle {
+        font-size: 16px;
+
+        margin-bottom: 45px;
+    }
+
+
+    .plans-page::before {
+        font-size: 32px;
+
+        letter-spacing: 5px;
+    }
+
+
+    .plans-page::after {
+        font-size: 30px;
+
+        letter-spacing: 3px;
+    }
+
+
+    .plan-card {
+        width: 100%;
+
+        max-width: 340px;
+    }
+
+}

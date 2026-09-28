@@ -1,0 +1,365 @@
+
+.admin-login-page {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 50px 20px;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 214, 0, 0.25),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(224, 0, 0, 0.18),
+            transparent 25%
+        ),
+        #fff8dc;
+}
+
+
+/* =================================
+   TOP GYM EQUIPMENT
+================================= */
+
+.admin-login-page::before {
+    content: "🏋️  💪  🏋️‍♂️  🏋️  💪";
+
+    position: absolute;
+
+    top: 25px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 55px;
+
+    letter-spacing: 30px;
+
+    opacity: 0.12;
+
+    transform: rotate(-3deg);
+
+    pointer-events: none;
+}
+
+
+/* =================================
+   BOTTOM GYM EQUIPMENT
+================================= */
+
+.admin-login-page::after {
+    content: "🏋️   ⚫ ⚫ ⚫   🏋️   💪   🏋️";
+
+    position: absolute;
+
+    bottom: 15px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    letter-spacing: 18px;
+
+    opacity: 0.10;
+
+    pointer-events: none;
+}
+
+
+/* =================================
+   LOGIN CARD
+================================= */
+
+.admin-login-card {
+    width: 400px;
+
+    padding: 45px 40px;
+
+    position: relative;
+
+    z-index: 2;
+
+    background: #111;
+
+    border-radius: 20px;
+
+    border-top: 6px solid #ffd600;
+
+    border-bottom: 6px solid #e00000;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(255, 214, 0, 0.15);
+
+    text-align: center;
+
+    animation: adminCardAppear 0.6s ease;
+}
+
+
+/* =================================
+   WEIGHT PLATE DECORATION
+================================= */
+
+.admin-login-card::before {
+    content: "⚫";
+
+    position: absolute;
+
+    top: 15px;
+    left: 20px;
+
+    color: #ffd600;
+
+    font-size: 25px;
+
+    opacity: 0.8;
+}
+
+
+.admin-login-card::after {
+    content: "⚫";
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    color: #e00000;
+
+    font-size: 25px;
+
+    opacity: 0.8;
+}
+
+
+
+.admin-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #ffd600;
+
+    border: 5px solid #222;
+
+    border-radius: 50%;
+
+    font-size: 34px;
+
+    box-shadow:
+        0 0 0 4px #ffd600,
+        0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+.admin-login-card h1 {
+    margin: 0;
+
+    color: #ffd600;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+.admin-subtitle {
+    margin: 10px 0 30px;
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+
+.input-group {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ffd600;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+
+.input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 2px solid #333;
+
+    border-radius: 8px;
+
+    background: #1c1c1c;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    box-sizing: border-box;
+}
+
+
+.input-group input::placeholder {
+    color: #777;
+}
+
+
+.input-group input:focus {
+    border-color: #ffd600;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 214, 0, 0.15),
+        0 0 15px rgba(255, 214, 0, 0.1);
+}
+
+.admin-login-button {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ffd600;
+
+    color: #111;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.admin-login-button:hover {
+    background: #e00000;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(224, 0, 0, 0.4);
+}
+
+
+
+.admin-login-button:active {
+    transform: translateY(0);
+}
+
+
+@keyframes adminCardAppear {
+
+    from {
+        opacity: 0;
+
+        transform:
+            translateY(30px)
+            scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+
+        transform:
+            translateY(0)
+            scale(1);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .admin-login-page {
+        padding: 30px 15px;
+    }
+
+
+    .admin-login-page::before {
+        font-size: 35px;
+
+        letter-spacing: 10px;
+    }
+
+
+    .admin-login-page::after {
+        font-size: 30px;
+
+        letter-spacing: 5px;
+    }
+
+
+    .admin-login-card {
+        width: 100%;
+
+        padding: 35px 25px;
+    }
+
+
+    .admin-login-card h1 {
+        font-size: 27px;
+    }
+
+
+    .admin-icon {
+        width: 65px;
+        height: 65px;
+
+        font-size: 30px;
+    }
+
+}

@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* MAIN PAGE */
+
+.client-register-page {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 50px 20px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(255, 214, 0, 0.18),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(224, 0, 0, 0.10),
+            transparent 25%
+        ),
+
+        #fff8dc;
+
+    color: #111;
+}
+
+
+/* TOP-LEFT GYM EQUIPMENT */
+
+.client-register-page::before {
+
+    content: "🏋️";
+
+    position: absolute;
+
+    top: 40px;
+
+    left: 40px;
+
+    font-size: 70px;
+
+    opacity: 0.12;
+
+    transform: rotate(-15deg);
+
+    pointer-events: none;
+}
+
+
+/* BOTTOM-RIGHT GYM EQUIPMENT */
+
+.client-register-page::after {
+
+    content: "🏋️‍♂️";
+
+    position: absolute;
+
+    right: 40px;
+
+    bottom: 40px;
+
+    font-size: 70px;
+
+    opacity: 0.12;
+
+    transform: rotate(15deg);
+
+    pointer-events: none;
+}
+
+
+/* REGISTER CARD */
+
+.client-register-card {
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 400px;
+
+    padding: 40px 35px;
+
+    background: #111;
+
+    border-top: 6px solid #ffd600;
+
+    border-bottom: 6px solid #e00000;
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.30);
+
+    text-align: center;
+}
+
+
+/* REGISTER ICON */
+
+.register-icon {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #ffd600;
+
+    border-radius: 50%;
+
+    font-size: 38px;
+
+    box-shadow:
+        0 0 0 5px #222;
+
+    animation: gymPulse 2s infinite;
+}
+
+
+/* ICON ANIMATION */
+
+@keyframes gymPulse {
+
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.06);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+/* TITLE */
+
+.client-register-card h1 {
+
+    margin-bottom: 8px;
+
+    color: #ffd600;
+
+    font-size: 30px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* SUBTITLE */
+
+.register-subtitle {
+
+    margin-bottom: 30px;
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+/* INPUT GROUP */
+
+.register-input-group {
+
+    margin-bottom: 20px;
+
+    text-align: left;
+}
+
+
+/* LABEL */
+
+.register-input-group label {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #ffd600;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+/* INPUT */
+
+.register-input-group input {
+
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 2px solid #333;
+
+    border-radius: 8px;
+
+    background: #1c1c1c;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* PLACEHOLDER */
+
+.register-input-group input::placeholder {
+
+    color: #777;
+}
+
+
+/* INPUT FOCUS */
+
+.register-input-group input:focus {
+
+    border-color: #ffd600;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 214, 0, 0.12);
+}
+
+
+/* REGISTER BUTTON */
+
+.register-main-button {
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ffd600;
+
+    color: #111;
+
+    font-size: 16px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.register-main-button:hover {
+
+    background: #e00000;
+
+    color: white;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(224, 0, 0, 0.30);
+}
+
+
+/* LOGIN TEXT */
+
+.login-text {
+
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* LOGIN BUTTON */
+
+.login-button {
+
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #555;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #ddd;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.login-button:hover {
+
+    border-color: #ffd600;
+
+    background: #ffd600;
+
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* TABLET */
+
+@media (max-width: 600px) {
+
+    .client-register-page {
+
+        padding: 40px 20px;
+
+    }
+
+
+    .client-register-card {
+
+        width: 100%;
+
+        max-width: 400px;
+
+        padding: 35px 25px;
+
+    }
+
+
+    .client-register-page::before {
+
+        top: 20px;
+
+        left: 15px;
+
+        font-size: 45px;
+
+    }
+
+
+    .client-register-page::after {
+
+        right: 15px;
+
+        bottom: 20px;
+
+        font-size: 45px;
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 400px) {
+
+    .client-register-page::before {
+
+        font-size: 35px;
+
+    }
+
+
+    .client-register-page::after {
+
+        font-size: 35px;
+
+    }
+
+
+    .client-register-card h1 {
+
+        font-size: 24px;
+
+    }
+
+
+    .register-icon {
+
+        width: 65px;
+
+        height: 65px;
+
+        font-size: 32px;
+
+    }
+
+}

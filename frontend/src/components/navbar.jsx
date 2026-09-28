@@ -5,23 +5,20 @@ function Navbar() {
   return (
     <nav className="navbar">
 
-      {/* Logo */}
       <Link to="/" className="logo">
         <img src="gymlogo.jpg" alt="Gym Logo" />
         <span>R.RB Fitness Gym</span>
       </Link>
 
-      {/* Navigation */}
       <div className="nav-links">
         <Link to="/">Home</Link>
 
-        {/* Login Dropdown */}
         <div className="login-dropdown">
           <button className="login-btn">Login ▾</button>
 
           <div className="dropdown-menu">
-            <Link to="/adminlogin">Admin Login</Link>
-            <Link to="/clientlogin">Client Login</Link>
+            <Link to="/admin/login">Admin Login</Link>
+            <Link to="/client/login">Client Login</Link>
           </div>
         </div>
 

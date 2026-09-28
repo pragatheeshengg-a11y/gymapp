@@ -1,0 +1,408 @@
+/* Main Page */
+
+.client-login-page {
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+    overflow: hidden;
+
+    padding: 50px 20px;
+
+    background:
+        radial-gradient(circle at 10% 20%, rgba(255, 214, 0, 0.25), transparent 25%),
+        radial-gradient(circle at 90% 80%, rgba(224, 0, 0, 0.15), transparent 25%),
+        #fff8dc;
+}
+
+
+/* Gym Equipment Background */
+
+.client-login-page::before {
+    content: "🏋️  💪  🏋️‍♂️  🏋️  💪";
+
+    position: absolute;
+
+    top: 30px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 55px;
+
+    letter-spacing: 35px;
+
+    opacity: 0.12;
+
+    transform: rotate(-3deg);
+
+    pointer-events: none;
+}
+
+
+/* Bottom Equipment */
+
+.client-login-page::after {
+    content: "🏋️   ⚫ ⚫ ⚫   🏋️   💪   🏋️";
+
+    position: absolute;
+
+    bottom: 20px;
+    left: 0;
+
+    width: 100%;
+
+    text-align: center;
+
+    font-size: 50px;
+
+    letter-spacing: 20px;
+
+    opacity: 0.10;
+
+    pointer-events: none;
+}
+
+
+/* Login Card */
+
+.client-login-card {
+    width: 400px;
+
+    padding: 45px 40px;
+
+    position: relative;
+    z-index: 2;
+
+    background: #111;
+
+    border-radius: 20px;
+
+    border-top: 6px solid #ffd600;
+    border-bottom: 6px solid #e00000;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.35),
+        0 0 30px rgba(255, 214, 0, 0.15);
+
+    text-align: center;
+}
+
+
+/* Small Gym Decoration */
+
+.client-login-card::before {
+    content: "⚫";
+
+    position: absolute;
+
+    top: 15px;
+    left: 20px;
+
+    color: #ffd600;
+
+    font-size: 25px;
+
+    opacity: 0.7;
+}
+
+
+.client-login-card::after {
+    content: "⚫";
+
+    position: absolute;
+
+    top: 15px;
+    right: 20px;
+
+    color: #e00000;
+
+    font-size: 25px;
+
+    opacity: 0.7;
+}
+
+
+/* User Icon */
+
+.client-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffd600;
+
+    border: 5px solid #222;
+
+    border-radius: 50%;
+
+    font-size: 35px;
+
+    box-shadow:
+        0 0 0 4px #ffd600,
+        0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+
+/* Heading */
+
+.client-login-card h1 {
+    margin: 0;
+
+    color: #ffd600;
+
+    font-size: 32px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+}
+
+
+/* Subtitle */
+
+.client-subtitle {
+    margin: 10px 0 30px;
+
+    color: #aaa;
+
+    font-size: 15px;
+}
+
+
+/* Input Group */
+
+.client-input-group {
+    text-align: left;
+
+    margin-bottom: 20px;
+}
+
+
+/* Labels */
+
+.client-input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #ffd600;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+}
+
+
+/* Inputs */
+
+.client-input-group input {
+    width: 100%;
+
+    padding: 14px 15px;
+
+    border: 2px solid #333;
+
+    border-radius: 8px;
+
+    background: #1c1c1c;
+
+    color: white;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+    box-sizing: border-box;
+}
+
+
+/* Input Placeholder */
+
+.client-input-group input::placeholder {
+    color: #777;
+}
+
+
+/* Input Focus */
+
+.client-input-group input:focus {
+    border-color: #ffd600;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 214, 0, 0.15),
+        0 0 15px rgba(255, 214, 0, 0.1);
+}
+
+
+/* Login Button */
+
+.client-login-button {
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #ffd600;
+
+    color: #111;
+
+    font-size: 17px;
+
+    font-weight: 900;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Login Hover */
+
+.client-login-button:hover {
+    background: #e00000;
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 8px 20px rgba(224, 0, 0, 0.4);
+}
+
+
+/* Register Text */
+
+.register-text {
+    margin-top: 25px;
+
+    margin-bottom: 10px;
+
+    color: #aaa;
+
+    font-size: 14px;
+}
+
+
+/* Register Button */
+
+.register-button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 2px solid #ffd600;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: #ffd600;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* Register Hover */
+
+.register-button:hover {
+    background: #ffd600;
+
+    color: #111;
+
+    transform: translateY(-2px);
+}
+
+
+/* Gym Equipment Side Decorations */
+
+.client-login-card {
+    isolation: isolate;
+}
+
+
+/* Left Dumbbell */
+
+.client-login-page .client-login-card {
+    animation: cardAppear 0.6s ease;
+}
+
+
+/* Animation */
+
+@keyframes cardAppear {
+
+    from {
+        opacity: 0;
+
+        transform: translateY(30px) scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0) scale(1);
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .client-login-page {
+        padding: 30px 15px;
+    }
+
+    .client-login-page::before {
+        font-size: 35px;
+
+        letter-spacing: 10px;
+    }
+
+    .client-login-page::after {
+        font-size: 30px;
+
+        letter-spacing: 5px;
+    }
+
+    .client-login-card {
+        width: 100%;
+
+        padding: 35px 25px;
+    }
+
+    .client-login-card h1 {
+        font-size: 27px;
+    }
+
+}
