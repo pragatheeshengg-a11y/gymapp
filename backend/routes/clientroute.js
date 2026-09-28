@@ -9,7 +9,6 @@ const clientauth = require("../middleware/clientauth");
 const router = express.Router();
 
 
-// ================= REGISTER =================
 
 router.post("/client/register", async (req, res) => {
 
@@ -96,7 +95,7 @@ router.post("/client/register", async (req, res) => {
         console.log(error);
 
         res.status(500).json({
-            message: "Server error"
+            message: error.message
         });
 
     }
