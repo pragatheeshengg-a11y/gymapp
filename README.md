@@ -95,6 +95,8 @@ Clients can register, log in, access their dashboard, and view gym-related infor
 
 - MongoDB
 - Mongoose
+- MongoDB Atlas
+- MongoDB Compass
 
 ---
 
@@ -119,7 +121,7 @@ GYM_APP/
 │   │   ├── clientroute.js
 │   │   └── workoutroute.js
 │   │
-│   ├── .env
+│   |
 │   ├── package.json
 │   ├── package-lock.json
 │   └── server.js
@@ -156,14 +158,14 @@ GYM_APP/
 │   │   ├── index.css
 │   │   └── main.jsx
 │   │
-│   ├── .gitignore
+│   |
 │   ├── eslint.config.js
 │   ├── index.html
 │   ├── package.json
 │   ├── package-lock.json
 │   └── vite.config.js
 │
-├── .gitignore
+|
 └── README.md
 ```
 
