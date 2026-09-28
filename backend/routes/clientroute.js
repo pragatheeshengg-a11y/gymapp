@@ -95,7 +95,7 @@ router.post("/client/register", async (req, res) => {
         console.log(error);
 
         res.status(500).json({
-            message: error.message
+            message: "Server error"
         });
 
     }
@@ -178,7 +178,7 @@ router.post("/client/login", async (req, res) => {
         console.log(error);
 
         res.status(500).json({
-            message: error.message
+            message: "Server error"
         });
 
     }
