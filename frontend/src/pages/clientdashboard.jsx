@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./clientdashboard.css";
 
+
 function ClientDashboard() {
 
     const navigate = useNavigate();
@@ -10,6 +11,7 @@ function ClientDashboard() {
 
     const [workouts, setWorkouts] = useState([]);
 
+    const API_URL = import.meta.env.VITE_API_URL;
 
     useEffect(() => {
 
@@ -31,7 +33,7 @@ function ClientDashboard() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/client/dashboard",
+                    `${API_URL}/api/client/dashboard`,
                     {
                         method: "GET",
 
@@ -92,7 +94,7 @@ function ClientDashboard() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/client/workouts",
+                    `${API_URL}/api/client/workouts`,
                     {
                         method: "GET",
 

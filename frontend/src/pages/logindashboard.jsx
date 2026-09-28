@@ -14,6 +14,8 @@ function AdminDash() {
     const [reps, setReps] = useState("");
     const [day, setDay] = useState("Monday");
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
     const navigate = useNavigate();
 
 
@@ -24,7 +26,7 @@ function AdminDash() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/admin/clients"
+                    `${API_URL}/api/admin/clients`
                 );
 
                 const data = await response.json();
@@ -63,7 +65,7 @@ function AdminDash() {
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/admin/workout",
+                `${API_URL}/api/admin/workout`,
                 {
                     method: "POST",
 
@@ -145,7 +147,7 @@ function AdminDash() {
             try {
 
                 const response = await fetch(
-                    "http://localhost:5000/api/admin/dashboard",
+                    `${API_URL}/api/admin/dashboard`,
                     {
                         method: "GET",
 

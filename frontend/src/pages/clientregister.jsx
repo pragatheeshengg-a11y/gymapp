@@ -10,12 +10,14 @@ function ClientRegister() {
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
     async function handleregister() {
 
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/client/register",
+                `${API_URL}/api/client/register`,
                 {
                     method: "POST",
 

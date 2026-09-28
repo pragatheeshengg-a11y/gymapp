@@ -9,13 +9,15 @@ function ClientUser() {
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
 
+    const API_URL = import.meta.env.VITE_API_URL;
+
 
     async function handlelogin() {
 
         try {
 
             const response = await fetch(
-                "http://localhost:5000/api/client/login",
+                `${API_URL}/api/client/login`,
                 {
                     method: "POST",
 
