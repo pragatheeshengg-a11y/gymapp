@@ -4,10 +4,10 @@ A full-stack Gym Management Web Application built using the **MERN Stack**.
 
 The application provides separate authentication and dashboards for **Admin** and **Client** users. Clients can register and log in, while admins can manage gym-related information such as workouts.
 
----
 ## 🔗 Demo Link
+
 click here:https://gymapp-kappa-five.vercel.app/
----
+
 ## 📌 Project Overview
 
 GYM APP is a full-stack web application developed using:
