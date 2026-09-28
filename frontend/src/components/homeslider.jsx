@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import gym1 from "../assets/gym1.webp";
+import gym1 from "../assets/gym1.jpg";
 import gym2 from "../assets/gym2.jpg";
-import gym3 from "../assets/gym3.webp";
+import gym3 from "../assets/gym3.jpg";
 import "./homeslider.css";
 function HeroSlider() {
   const images = [gym1, gym2, gym3];
