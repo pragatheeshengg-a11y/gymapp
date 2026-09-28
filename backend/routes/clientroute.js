@@ -178,7 +178,7 @@ router.post("/client/login", async (req, res) => {
         console.log(error);
 
         res.status(500).json({
-            message: "Server error"
+            message: error.message
         });
 
     }
